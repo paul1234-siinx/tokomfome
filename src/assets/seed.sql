@@ -1,0 +1,18 @@
+CREATE TABLE IF NOT EXISTS cardapio(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT ,
+    foto VARCHAR ,
+    desc TEXT ,
+    valor REAL ,
+    qtd INTEGER);
+
+CREATE TABLE IF NOT EXISTS cliente(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT ,
+    mesa VARCHAR);
+
+CREATE TABLE IF NOT EXISTS comanda(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id_card INTEGER FOREIGN KEY(id_card) REFERENCES cardapio(id),
+    id_cli INTEGER FOREIGN KEY(id_cli) REFERENCES cliente(id)
+);

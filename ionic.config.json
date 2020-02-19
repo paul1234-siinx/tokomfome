@@ -1,0 +1,7 @@
+{
+  "name": "Tokomfome",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
