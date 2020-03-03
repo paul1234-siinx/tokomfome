@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { SQLitePorter } from '@ionic-native/sqlite-porter/ngx';
 import { SQLite } from '@ionic-native/sqlite/ngx';
 
+
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -22,8 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    SQLite,
-    SQLitePorter
+    SQLite
   ],
   bootstrap: [AppComponent]
 })
