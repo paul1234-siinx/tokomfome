@@ -8,15 +8,15 @@
 </ion-header>
 
 <ion-content>
-  <form>
+  <form action="../database.service.ts" method="POST">
     <ion-list lines="full" class="ion-no-margin ion-no-padding">
       <ion-item>
         <ion-label position="stacked">Nome <ion-text color="danger">:</ion-text></ion-label>
-        <ion-input required type="text" oninput="handleNameValue(event)"></ion-input>
+        <ion-input required type="text" oninput="handleNameValue(event)" name="nome"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="stacked">Mesa <ion-text color="danger">:</ion-text></ion-label>
-        <ion-input required type="text" oninput="handleNameValue(event)"></ion-input>
+        <ion-input required type="text" oninput="handleNameValue(event)" name="mesa"></ion-input>
       </ion-item>
     </ion-list>
   </form>
